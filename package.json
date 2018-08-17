@@ -1,0 +1,32 @@
+{
+  "name": "webpack-numbers",
+  "version": "1.0.0",
+  "main": "dist/webpack-numbers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:browser": "webpack && cp dist/webpack-numbers.js examples/browser",
+    "build:node": "webpack && cp dist/webpack-numbers.js examples/node/ && node examples/node/example.js"
+  },
+  "author": "Effy",
+  "license": "ISC",
+  "keywords": [
+    "webpack",
+    "webpack-library",
+    "bundling",
+    "library"
+  ],
+  "description": "An example of how to author libraries using webpack",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.3.0",
+    "eslint-loader": "^2.1.0",
+    "lodash": "^4.17.10",
+    "mini-css-extract-plugin": "^0.4.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
